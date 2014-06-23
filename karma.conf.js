@@ -16,7 +16,8 @@ module.exports = function(config) {
     // list of files / patterns to load in the browser
     files: [
       'lib/angular/angular.js',
-      'lib/angular-mocks/angular-mocks.js'
+      'lib/angular-mocks/angular-mocks.js',
+      'app/**/*Spec.js'
     ],
 
 
@@ -63,6 +64,6 @@ module.exports = function(config) {
 
     // Continuous Integration mode
     // if true, Karma captures browsers, runs the tests and exits
-    singleRun: false
+    singleRun: true
   });
 };
